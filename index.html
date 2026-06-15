@@ -1,531 +1,723 @@
-<!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Sakshi Doshi</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-github"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Hello! I'm Sakshi</h1>
-								<p>High-key Data Scientist. low-key Artist.</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#resume">Resume</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sakshi Doshi — Data Scientist II at Truist Bank. AI-powered risk intelligence, fraud detection, and LLM systems." />
+  <title>Sakshi Doshi — Data Scientist & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #050c1a;
+      --bg2: #081020;
+      --surface: #0d1a2e;
+      --surface2: #122035;
+      --border: rgba(129,140,248,0.12);
+      --border-hi: rgba(129,140,248,0.35);
+      --text: #dde4f0;
+      --text2: #8fa3c0;
+      --text3: #576a84;
+      --indigo: #818cf8;
+      --indigo2: #6366f1;
+      --teal: #34d399;
+      --amber: #fbbf24;
+      --grad1: linear-gradient(135deg,#818cf8 0%,#34d399 100%);
+      --grad2: linear-gradient(135deg,#6366f1 0%,#818cf8 100%);
+      --shadow: 0 4px 24px rgba(0,0,0,.4);
+      --shadow-lg: 0 8px 48px rgba(0,0,0,.5);
+      --r: 12px;
+      --rl: 20px;
+      --nav: 64px;
+      --fd: 'Fraunces',serif;
+      --fb: 'DM Sans',sans-serif;
+      --fm: 'JetBrains Mono',monospace;
+      --ease: .25s cubic-bezier(.4,0,.2,1);
+    }
+    [data-theme="light"] {
+      --bg: #f5f7fc; --bg2: #edf0f9; --surface: #fff; --surface2: #f1f5fd;
+      --border: rgba(99,102,241,.12); --border-hi: rgba(99,102,241,.3);
+      --text: #0f172a; --text2: #374151; --text3: #6b7280;
+      --shadow: 0 4px 24px rgba(0,0,0,.08); --shadow-lg: 0 8px 48px rgba(0,0,0,.12);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:var(--fb);background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden;transition:background var(--ease),color var(--ease)}
+    a{color:inherit;text-decoration:none}
+    ul{list-style:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 24px}
+    .section{padding:100px 0}
+    .section-label{font-family:var(--fm);font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--indigo);margin-bottom:12px}
+    .section-title{font-family:var(--fd);font-size:clamp(2rem,4vw,2.75rem);font-weight:700;line-height:1.15;margin-bottom:16px}
+    .section-sub{color:var(--text2);font-size:1.05rem;max-width:560px;margin-bottom:64px}
+    .tag{display:inline-flex;align-items:center;padding:3px 10px;border-radius:999px;font-size:.72rem;font-family:var(--fm);background:rgba(129,140,248,.1);border:1px solid rgba(129,140,248,.2);color:var(--indigo);transition:all var(--ease)}
+    .tag.teal{background:rgba(52,211,153,.1);border-color:rgba(52,211,153,.25);color:var(--teal)}
+    .tag.amber{background:rgba(251,191,36,.1);border-color:rgba(251,191,36,.25);color:var(--amber)}
+    .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:var(--r);font-family:var(--fb);font-size:.9rem;font-weight:500;cursor:pointer;transition:all var(--ease);border:none;text-decoration:none}
+    .btn-primary{background:var(--grad2);color:#fff;box-shadow:0 0 24px rgba(99,102,241,.3)}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 32px rgba(99,102,241,.5)}
+    .btn-outline{background:transparent;color:var(--text);border:1px solid var(--border-hi)}
+    .btn-outline:hover{border-color:var(--indigo);color:var(--indigo);transform:translateY(-2px)}
 
-				<!-- Main -->
-					<div id="main">
+    /* Reveal */
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
 
-						<!-- Resume -->
-							<article id="resume">
-								<!-- <h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/girl.jpeg" alt=""  /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p> -->
-								
-									<h2 class="major">Resume</h2>
-									<a href="images/SakshiDoshi_Resume.pdf" target="_blank" class="button" >Download Resume</a>
-									<br>
-									<br>
-									<h3 style="text-align:center;">My journey so far</h3>
-									<br>
-									<div class="timeline">
-										<div class="container right">
-											<div class="content2">
-											  <h2>2023</h2>
-											  <h3>DataSeers.ai</h3>
-											  <p>Data Scientist</p>
-											</div>
-										  </div>
+    /* Nav */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;height:var(--nav);display:flex;align-items:center;transition:all .3s ease}
+    nav.scrolled{background:rgba(5,12,26,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);box-shadow:0 4px 24px rgba(0,0,0,.3)}
+    [data-theme="light"] nav.scrolled{background:rgba(245,247,252,.9)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:1100px;margin:0 auto;padding:0 24px}
+    .nav-logo{font-family:var(--fd);font-size:1.25rem;font-weight:700;background:var(--grad1);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+    .nav-links{display:flex;align-items:center;gap:32px}
+    .nav-links a{font-size:.875rem;color:var(--text2);font-weight:500;transition:color var(--ease);position:relative}
+    .nav-links a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;background:var(--indigo);transition:width var(--ease)}
+    .nav-links a:hover{color:var(--text)}.nav-links a:hover::after{width:100%}
+    .nav-right{display:flex;align-items:center;gap:12px}
+    .theme-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--surface);color:var(--text2);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1rem;transition:all var(--ease)}
+    .theme-btn:hover{border-color:var(--indigo);color:var(--indigo)}
+    .hamburger{display:none;width:40px;height:40px;border-radius:8px;border:1px solid var(--border);background:var(--surface);cursor:pointer;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+    .hamburger span{width:18px;height:1.5px;background:var(--text2);border-radius:2px;transition:all .3s}
+    .mobile-menu{display:none;position:fixed;top:var(--nav);left:0;right:0;background:var(--bg);border-bottom:1px solid var(--border);padding:20px 24px;flex-direction:column;gap:16px;z-index:99}
+    .mobile-menu.open{display:flex}
+    .mobile-menu a{font-size:1rem;color:var(--text2);padding:8px 0;border-bottom:1px solid var(--border)}
 
-										<div class="container left">
-										  <div class="content2">
-											<h2>2021-2023</h2>
-											<h3>UMass Amherst</h3>
-											<p>Completed Master's of Science - Computer Science; Specialization - Data Science</p>
-										  </div>
-										</div>
-										<div class="container right">
-										  <div class="content2">
-											<h2>2022</h2>
-											<h3>MathWorks</h3>
-											<p>Software Engineer Intern</p>									
-										  </div>
-										</div>
+    /* Hero */
+    #hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:var(--nav)}
+    #particles-canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.35;pointer-events:none}
+    [data-theme="light"] #particles-canvas{opacity:.12}
+    .hero-content{position:relative;z-index:2;max-width:780px;margin:0 auto;padding:0 24px;width:100%}
+    .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;border:1px solid rgba(52,211,153,.3);background:rgba(52,211,153,.08);font-family:var(--fm);font-size:.72rem;letter-spacing:.1em;color:var(--teal);margin-bottom:24px}
+    .hero-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 8px var(--teal);animation:pulse 2s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.8)}}
+    .hero-name{font-family:var(--fd);font-size:clamp(3rem,7vw,5.5rem);font-weight:700;line-height:1.05;margin-bottom:16px}
+    .hero-name span{background:var(--grad1);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+    .hero-role-wrap{font-family:var(--fd);font-size:clamp(1.1rem,2.5vw,1.45rem);font-weight:300;font-style:italic;color:var(--text2);margin-bottom:24px;height:2em;overflow:hidden}
+    .hero-role-track{transition:transform .6s cubic-bezier(.4,0,.2,1)}
+    .hero-role-item{height:2em;display:flex;align-items:center}
+    .hero-desc{color:var(--text2);font-size:1.05rem;max-width:640px;margin-bottom:36px;line-height:1.75}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+    .scroll-hint{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--text3);font-size:.72rem;font-family:var(--fm);letter-spacing:.1em;animation:bounce 2s ease-in-out infinite}
+    @keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(6px)}}
+    .scroll-hint svg{width:20px;height:20px}
 
-										<div class="container left">
-											<div class="content2">
-											  <h2>2021</h2>
-											  <h3>UMass Amherst</h3>
-											  <p>Started Master's of Science - Computer Science; Specialization - Data Science</p>
-											</div>
-										</div>
-										
-										<div class="container right">
-											<div class="content2">
-											  <h2>2017-2021</h2>
-											  <h3>University of Pune</h3>
-											<p>Completed Bachelor’s in Computer Engineering</p>
-											</div>
-										</div>
+    /* Impact Bar */
+    #impact{padding:0;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+    .impact-grid{display:grid;grid-template-columns:repeat(6,1fr)}
+    .impact-item{padding:36px 20px;border-right:1px solid var(--border);text-align:center}
+    .impact-item:last-child{border-right:none}
+    .impact-num{font-family:var(--fm);font-size:clamp(1.4rem,2.5vw,2rem);font-weight:500;color:var(--amber);display:block;line-height:1.2}
+    .impact-label{font-size:.72rem;color:var(--text3);margin-top:4px;line-height:1.4}
 
-										<div class="container left">
-											<div class="content2">
-											  <h2>2021</h2>
-											  <h3>Publication: Mesh Creation Tool for ANUGA</h3>
-											<p>National Conference on Recent Advances in Computer Engineering [RACE-2021] in association with Computer Society of India</p>
-											</div>
-										</div>
+    /* Timeline */
+    .timeline{position:relative;display:flex;flex-direction:column}
+    .timeline::before{content:'';position:absolute;left:20px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--indigo),transparent)}
+    .tl-item{display:grid;grid-template-columns:40px 1fr;gap:24px;padding-bottom:56px}
+    .tl-dot{display:flex;align-items:flex-start;justify-content:center;padding-top:4px}
+    .dot{width:12px;height:12px;border-radius:50%;background:var(--surface);border:2px solid var(--border-hi);position:relative;z-index:1;flex-shrink:0}
+    .dot.active{border-color:var(--indigo);background:var(--indigo);box-shadow:0 0 16px rgba(129,140,248,.5)}
+    .dot.active::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:1.5px solid rgba(129,140,248,.3);animation:ping 2s ease-in-out infinite}
+    @keyframes ping{0%{transform:scale(1);opacity:.8}100%{transform:scale(2);opacity:0}}
+    .tl-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:28px 32px;transition:all var(--ease)}
+    .tl-card:hover{border-color:var(--border-hi);transform:translateX(4px);box-shadow:var(--shadow)}
+    .tl-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+    .tl-title{font-family:var(--fd);font-size:1.25rem;font-weight:600}
+    .tl-period{font-family:var(--fm);font-size:.72rem;color:var(--text3);padding:4px 10px;border:1px solid var(--border);border-radius:999px;white-space:nowrap}
+    .tl-company{font-size:.9rem;color:var(--indigo);font-weight:500;margin-bottom:2px}
+    .tl-loc{font-size:.8rem;color:var(--text3);margin-bottom:18px}
+    .tl-theme{font-size:.78rem;font-style:italic;color:var(--teal);margin-bottom:14px;font-family:var(--fd)}
+    .tl-bullets{display:flex;flex-direction:column;gap:10px}
+    .tl-b{position:relative;padding-left:20px;font-size:.875rem;color:var(--text2);line-height:1.6}
+    .tl-b::before{content:'→';color:var(--indigo);font-size:.8rem;position:absolute;left:0;top:3px}
+    .tl-b strong{color:var(--text);font-weight:500}
 
-										<div class="container right">
-											<div class="content2">
-											  <h2>2021</h2>
-											  <h3>Publication: A Review of Mesh Generation in ANUGA</h3>
-											<p>Springer International Conference on Sentimental Analysis and Deep Learning ICSADL 2021</p>
-											</div>
-										</div>
+    /* Projects */
+    .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .proj-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:28px;display:flex;flex-direction:column;transition:all var(--ease);position:relative;overflow:hidden}
+    .proj-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad1);transform:scaleX(0);transition:transform var(--ease);transform-origin:left}
+    .proj-card:hover{border-color:var(--border-hi);transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+    .proj-card:hover::before{transform:scaleX(1)}
+    .proj-num{font-family:var(--fm);font-size:.7rem;color:var(--text3);letter-spacing:.1em;margin-bottom:14px}
+    .proj-title{font-family:var(--fd);font-size:1.1rem;font-weight:600;margin-bottom:12px;line-height:1.3}
+    .proj-impact{background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.2);border-radius:var(--r);padding:9px 13px;font-size:.8rem;color:var(--amber);margin-bottom:14px;font-family:var(--fm)}
+    .proj-desc{font-size:.875rem;color:var(--text2);line-height:1.65;flex:1;margin-bottom:16px}
 
-										<div class="container left">
-										  <div class="content2">
-											<h2>2020 - 2021</h2>
-											<h3>Center for Development of Advanced Computing (C-DAC)</h3>
-											<p>Software Engineer and Full Stack Engineer Intern</p>
-											
-										  </div>
-										</div>
-										<div class="container right">
-										  <div class="content2">
-											<h2>2020</h2>
-											<h3>Securly</h3>
-											<p>Machine Learning Engineer Intern</p>
-											
-										  </div>
-										</div>
-										<div class="container left">
-										  <div class="content2">
-											<h2>2017</h2>
-											<h3>University of Pune</h3>
-											<p>Started Bachelor’s in Computer Engineering</p>
-										  </div>
-										</div>
-										<!-- <div class="container right">
-										  <div class="content2">
-											<h2>2017</h2>
-											<p>Finished High School</p>
-										  </div>
-										</div> -->
-									  </div>
-							
-							</article>
+    /* Volunteer */
+    #volunteer{background:var(--surface);border-top:1px solid var(--border)}
+    .vol-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--rl);padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;position:relative;overflow:hidden}
+    .vol-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(129,140,248,.04) 0%,rgba(52,211,153,.04) 100%);pointer-events:none}
+    .vol-eyebrow{font-family:var(--fm);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--teal);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+    .vol-eyebrow::before{content:'';width:24px;height:1.5px;background:var(--teal)}
+    .vol-title{font-family:var(--fd);font-size:1.65rem;font-weight:700;margin-bottom:10px;line-height:1.2}
+    .vol-org{font-size:.9rem;color:var(--indigo);font-weight:500;margin-bottom:18px}
+    .vol-desc{font-size:.9rem;color:var(--text2);line-height:1.75}
+    .vol-stats{display:flex;flex-direction:column;gap:16px}
+    .vol-stat{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:14px 18px}
+    .vol-icon{width:40px;height:40px;border-radius:10px;background:var(--grad2);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+    .vol-stat-label{font-size:.75rem;color:var(--text3);margin-bottom:2px}
+    .vol-stat-val{font-size:.875rem;color:var(--text);font-weight:500}
 
-						<!-- Projects -->
-							<article id="projects">
-								<h2 class="major">Projects</h2>
-									
-									<div class="project-container">
-										<!-- Project 1 -->
-										
-											<div class="project">
-												<img src="images/pawpularity.jpeg" alt="Project 3" />
-												<div class="project-details">
-													<h3>Pawpularity Contest</h3>
-													<a href="https://pawpularitycontest.streamlit.app/">Demo</a>
-													<a href="https://github.com/SaShaShady/PawpularityContest">Code</a>
-													<p>Secured first rank in the course with an RMSE value of 17.93 using SWIN Transformer by using raw photographs and metadata to forecast the ”Pawpularity” of pet photos. Trained 56 models using feature engineering, regressors, Ensemble Models and Deep learning approaches(Transfer learning, SWIN transformer, CNNs, ImageNet, ResNet, MobileNet, etc.)</p>
-													<!-- <a href="https://github.com/yourusername/project3" target="_blank">Repository</a> -->
-												</div>
-											</div>
+    /* Skills */
+    .skills-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+    .skill-cat{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:22px;transition:all var(--ease)}
+    .skill-cat:hover{border-color:var(--border-hi)}
+    .skill-cat-title{font-family:var(--fm);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--indigo);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+    .skill-cat-title::before{content:'';width:3px;height:12px;background:var(--grad1);border-radius:2px}
+    .skill-pills{display:flex;flex-wrap:wrap;gap:6px}
+    .pill{padding:4px 10px;border-radius:999px;font-size:.75rem;background:var(--surface2);color:var(--text2);border:1px solid var(--border);transition:all var(--ease)}
+    .pill:hover{border-color:var(--indigo);color:var(--indigo);background:rgba(129,140,248,.08)}
 
-											<div class="project">
-											<img src="images/pulmonaryFibrosis.png" alt="Project 1" />
-											<div class="project-details">
-												<h3>Prediction of Pulmonary Fibrosis Progression</h3>
-												<a href="https://pulmonary-fibrosis.streamlit.app/">Demo</a>
-												<a href="https://github.com/SaShaShady/Pulmonary-Fibrosis/blob/main/paper.pdf">Paper</a>
-												<a href="https://github.com/SaShaShady/Pulmonary-Fibrosis/tree/main">Code</a>
-												<p>Outperformed the Kaggle competition winner by achieving Laplace log-likelihood score of -6.8303. Implemented Deep Neural Network (ResNet) architecture to train the CT Lung Scans and Multiple Quantile Regressor to train the Tabular data. Used NumPy, Sci-kit learn for CT Scan Image Processing along with Pandas for tabular data cleaning. Concatenated both outputs in the end to give Forced Vital Capacity of lungs.</p>
-												<!-- <a href="https://github.com/yourusername/project1" target="_blank">Repository</a> -->
-											</div>
-										</div>
-								
-										<!-- Project 2 -->
-										<div class="project">
-											<img src="images/deepfake.png" alt="Project 2" />
-											<div class="project-details">
-												<h3>Deepfake Detection using Deep Learning (Smart India Hackathon)</h3>
-												<a href="https://github.com/SaShaShady/Deepfake_Detection/blob/main/Documentation.pdf">Documentation</a>
-												<a href="https://github.com/SaShaShady/Deepfake_Detection">Code</a>
-												<p>Led the team to nationals and got up to 90% accuracy in classifying Deepfakes by using EfficientNet B7 Convolutional Neural Net. Used NumPy, Sci-kit Learn for Video Frame Processing, Feature Extraction and Pandas for Visualizations. Developed a Mobile Application(Flutter), Web Portal (MERN stack and Microsoft Azure) and APIs to provide an interactive end for the model.</p>
-												<!-- <a href="https://github.com/yourusername/project2" target="_blank">Repository</a> -->
-											</div>
-										</div>
-								
-										<!-- Project 3 -->
-										
-								
-										<!-- Project 4 -->
-										<!-- <div class="project">
-											<img src="images/pixel.png" alt="Project 4" />
-											<div class="project-details">
-												<h3>Project 4 Title</h3>
-												<p>Description of Project 4 goes here...</p>
-												<a href="https://github.com/yourusername/project4" target="_blank">Repository</a>
-											</div>
-										</div> -->
+    /* Education */
+    .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .edu-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--rl);padding:32px;transition:all var(--ease)}
+    .edu-card:hover{border-color:var(--border-hi)}
+    .edu-icon{width:44px;height:44px;border-radius:12px;background:var(--grad2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:16px}
+    .edu-degree{font-family:var(--fd);font-size:1.1rem;font-weight:600;line-height:1.3;margin-bottom:4px}
+    .edu-spec{font-size:.85rem;color:var(--text2);margin-bottom:8px}
+    .edu-school{font-size:.9rem;color:var(--indigo);font-weight:500;margin-bottom:12px}
+    .edu-meta{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+    .edu-meta span{font-size:.8rem;color:var(--text3)}
+    .edu-gpa{font-family:var(--fm);color:var(--amber);font-size:.875rem}
 
-									</div>
-								
-								
-							</article>
+    /* Contact */
+    #contact{background:var(--surface);border-top:1px solid var(--border);padding:80px 0 48px}
+    .contact-inner{text-align:center}
+    .contact-title{font-family:var(--fd);font-size:clamp(2rem,4vw,3rem);font-weight:700;margin-bottom:16px}
+    .contact-sub{color:var(--text2);margin-bottom:48px;font-size:1.05rem}
+    .contact-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:64px}
+    .clink{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border-radius:var(--r);border:1px solid var(--border);background:var(--bg);font-size:.875rem;color:var(--text2);transition:all var(--ease)}
+    .clink:hover{border-color:var(--indigo);color:var(--indigo);transform:translateY(-2px)}
+    .clink svg{width:17px;height:17px;flex-shrink:0}
+    .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:32px;border-top:1px solid var(--border);font-size:.8rem;color:var(--text3);flex-wrap:wrap;gap:8px}
 
-						<!-- About -->
-						<article id="about">
-							<h2 class="major">About</h2>
-							<div class="about-container">
-								<div class="about-image">
-									<img src="images/SakshiDoshi_Headshot.jpeg" alt="" />
-								</div>
-								<div class="about-text">
-									<div class="intro">
-										<h3>Hello there!</h3>
-										<p>I'm Sakshi, a passionate Data Scientist based in Alpharetta, Georgia.</p>
-									</div>
-									<div class="details">
-										<h3>Background</h3>
-										<p>I recently graduated from the University of Massachusetts Amherst with a Masters in Computer Science, specializing in Data Science. My journey began with a Bachelor's in Computer Engineering from the University of Pune.</p>
-										<p>Throughout my journey, I've had the privilege of interning at companies like Securly, Center for Development of Advanced Computing, India, and MathWorks.</p>
-									</div>
-									<div class="achievements">
-										<h3>Contributions</h3>
-										<p>My work has been recognized in various academic circles, including being published in journals like Springer International Conference on Sentimental Analysis and Deep Learning ICSADL 2021 and National Conference on Recent Advances in Computer Engineering [RACE-2021] in association with Computer Society of India. I have also given talks at Google Devfest.</p>
-									</div>
-									<div class="end-notes">
-										<p>I love to talk about space, the universe, the existence of aliens and weird conspiracy theories. Someday, I'd love to get paid in strawberry milk.</p>
-									</div>
+    /* Responsive */
+    @media(max-width:1024px){
+      .impact-grid{grid-template-columns:repeat(3,1fr)}
+      .impact-item:nth-child(3){border-right:none}
+      .impact-item:nth-child(n+4){border-top:1px solid var(--border)}
+      .impact-item:nth-child(6){border-right:none}
+      .skills-grid{grid-template-columns:repeat(3,1fr)}
+    }
+    @media(max-width:768px){
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      .proj-grid{grid-template-columns:1fr}
+      .vol-card{grid-template-columns:1fr;gap:28px}
+      .skills-grid{grid-template-columns:repeat(2,1fr)}
+      .edu-grid{grid-template-columns:1fr}
+      .impact-grid{grid-template-columns:repeat(2,1fr)}
+      .impact-item:nth-child(2n){border-right:none}
+      .impact-item:nth-child(n+3){border-top:1px solid var(--border)}
+      .impact-item:nth-child(2){border-right:none}
+      .impact-item:nth-child(3){border-right:1px solid var(--border)}
+      .impact-item:nth-child(5){border-right:1px solid var(--border)}
+      .timeline::before{left:20px}
+      .tl-item{grid-template-columns:40px 1fr}
+      .tl-card{padding:20px}
+      .footer-bottom{flex-direction:column;text-align:center}
+    }
+    @media(max-width:480px){
+      .section{padding:72px 0}
+      .skills-grid{grid-template-columns:1fr}
+      .contact-links{flex-direction:column;align-items:center}
+    }
 
-								</div>
-							</div>
-						</article>
-						
+    ::-webkit-scrollbar{width:5px}
+    ::-webkit-scrollbar-track{background:var(--bg)}
+    ::-webkit-scrollbar-thumb{background:var(--border-hi);border-radius:3px}
+    ::-webkit-scrollbar-thumb:hover{background:var(--indigo)}
+  </style>
+</head>
+<body>
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="https://formspree.io/f/xdorgblq">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="https://github.com/SaShaShady" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/in/sakshidoshi/" class="fa fa-linkedin-square"><span class="label"></span></a></li>
-									<li><a href="mailto:sakshidoshi3@gmail.com" class="fa fa-envelope"><span class="label"></span></a></li>
-								</ul>
-							</article>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">SD</a>
+    <div class="nav-links">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☀️</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#experience" class="ml">Experience</a>
+  <a href="#projects" class="ml">Projects</a>
+  <a href="#skills" class="ml">Skills</a>
+  <a href="#education" class="ml">Education</a>
+  <a href="#contact" class="ml">Contact</a>
+</div>
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+<main>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+<!-- HERO -->
+<section id="hero">
+  <canvas id="particles-canvas"></canvas>
+  <div class="hero-content">
+    <div>
+      <div class="hero-badge reveal">Currently at Truist Bank · Charlotte, NC</div>
+      <h1 class="hero-name reveal d1">Sakshi<br/><span>Doshi</span></h1>
+      <div class="hero-role-wrap reveal d2">
+        <div class="hero-role-track" id="roleTrack">
+          <div class="hero-role-item">Data Scientist</div>
+          <div class="hero-role-item">AI Engineer</div>
+          <div class="hero-role-item">Risk Intelligence Builder</div>
+          <div class="hero-role-item">LLM Systems Architect</div>
+        </div>
+      </div>
+      <p class="hero-desc reveal d3">I build AI systems that turn raw data into executive-level intelligence — from automated risk briefings for Chief Risk Officers to fraud detection across 70 billion transactions.</p>
+      <div class="hero-cta reveal d4">
+        <a href="#experience" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>SCROLL</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</section>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+<!-- IMPACT BAR -->
+<section id="impact">
+  <div class="impact-grid">
+    <div class="impact-item"><span class="impact-num" data-count="2000" data-suffix="+">0</span><div class="impact-label">Hours Saved / Year</div></div>
+    <div class="impact-item"><span class="impact-num" data-count="250" data-suffix="+">0</span><div class="impact-label">Hours via Sentinel100</div></div>
+    <div class="impact-item"><span class="impact-num" data-count="213" data-suffix="K+">0</span><div class="impact-label">Complaints Flagged</div></div>
+    <div class="impact-item"><span class="impact-num" data-count="891">0</span><div class="impact-label">KRIs Tracked</div></div>
+    <div class="impact-item"><span class="impact-num" data-count="70" data-suffix="B">0</span><div class="impact-label">Transactions Processed</div></div>
+    <div class="impact-item"><span class="impact-num" data-count="85" data-suffix="%">0</span><div class="impact-label">Fraud Recall</div></div>
+  </div>
+</section>
 
-								<section>
-									<h3 class="major">Lists</h3>
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container">
+    <div class="section-label reveal">Career</div>
+    <h2 class="section-title reveal d1">Where I've Built Things</h2>
+    <p class="section-sub reveal d2">From detecting fraud at fintech scale to automating intelligence for a top-15 US bank's Chief Risk Officer.</p>
+    <div class="timeline">
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+      <div class="tl-item reveal">
+        <div class="tl-dot"><div class="dot active"></div></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <div class="tl-title">Data Scientist II</div>
+              <div class="tl-company">Truist Bank</div>
+              <div class="tl-loc">📍 Charlotte, NC</div>
+            </div>
+            <span class="tl-period">Sept 2025 – Present</span>
+          </div>
+          <div class="tl-theme">AI-Powered Risk Innovation & Automation</div>
+          <div class="tl-bullets">
+            <div class="tl-b">Deployed an AI workflow on Rogo.ai monitoring <strong>13 key risk domains</strong> — daily automated briefing to the Chief Risk Officer and 14 direct reports, saving an estimated <strong>2,000+ manual hours annually</strong> with built-in AI-powered QA.</div>
+            <div class="tl-b">Developed <strong>Sentinel100</strong> with Rogo.ai + Python: weekly adverse news &amp; market surveillance across Truist's <strong>top 100 clients and 5 risk signals</strong>, saving <strong>250+ manual hours/year</strong> by replacing Excel-based filtering.</div>
+            <div class="tl-b">Built a Python NLP Pipeline scoring and flagging <strong>213K+ Tier-1 complaints</strong> using weighted keyword detection and TF-IDF/KMeans clustering with GitLab Duo AI assistance.</div>
+            <div class="tl-b">Led automated monthly reporting for <strong>891 Key Risk Indicators</strong> — saving <strong>70+ hours/month + 60 hours/quarter</strong>, delivered to the CRO, Risk Committee, Board, and all Business Units.</div>
+          </div>
+        </div>
+      </div>
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+      <div class="tl-item reveal">
+        <div class="tl-dot"><div class="dot"></div></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <div class="tl-title">Data Scientist I</div>
+              <div class="tl-company">DataSeers.ai</div>
+              <div class="tl-loc">📍 Alpharetta, GA</div>
+            </div>
+            <span class="tl-period">July 2023 – Sept 2025</span>
+          </div>
+          <div class="tl-bullets">
+            <div class="tl-b">Built fraud detection models for <strong>Human Sex Trafficking &amp; Elderly Financial Abuse</strong> using XGBoost + DBSCAN — <strong>85% recall, 70% precision</strong>, uncovering fraud rings of 1,500+ accounts via graph-based analysis.</div>
+            <div class="tl-b">Developed a RAG chatbot (React, Node, Kafka, Flask, Llama3) for ECL developers — reduced <strong>language-related support queries by 55%</strong>.</div>
+            <div class="tl-b">Cleaned and classified <strong>90% of unclean merchant names</strong> in bank transactions using Llama2, BERT Transformers, and Regex, improving downstream alert quality.</div>
+            <div class="tl-b">Developed risk ratings (Address, Account, Identity, Account Holder) using Logistic Regression + XGBoost across <strong>70 billion transactions</strong> — improved fraud prevention and compliance monitoring by <strong>60%</strong>.</div>
+          </div>
+        </div>
+      </div>
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+      <div class="tl-item reveal">
+        <div class="tl-dot"><div class="dot"></div></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <div class="tl-title">Software Engineer Intern</div>
+              <div class="tl-company">MathWorks</div>
+              <div class="tl-loc">📍 Natick, MA</div>
+            </div>
+            <span class="tl-period">May 2022 – Aug 2022</span>
+          </div>
+          <div class="tl-bullets">
+            <div class="tl-b">Enhanced readability of the Allocation Matrix by over <strong>90%</strong> by converting it into Allocation Diagrams using <strong>MATLAB, C++, and JavaScript</strong>. Developed a comprehensive Dataflow for the Allocation Diagram Architecture using the Simulink Codebase.</div>
+            <div class="tl-b">Independently reflected <strong>95%+ of the Matrix</strong> as an Allocation Diagram, completing the full feature end-to-end and addressing various logical design problems.</div>
+            <div class="tl-b">Contributed to the Architecture Modeling Web Development Project as part of an <strong>11-person System Core Architecture Team</strong>.</div>
+          </div>
+        </div>
+      </div>
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+      <div class="tl-item reveal">
+        <div class="tl-dot"><div class="dot"></div></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <div class="tl-title">Web Developer, Graphic Designer & IT Support</div>
+              <div class="tl-company">Center for Women & Community</div>
+              <div class="tl-loc">📍 Amherst, MA</div>
+            </div>
+            <span class="tl-period">Feb 2022 – May 2023</span>
+          </div>
+          <div class="tl-bullets">
+            <div class="tl-b">Provided web development, graphic design, IT support, and community outreach services during graduate studies at UMass Amherst.</div>
+          </div>
+        </div>
+      </div>
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"><div class="dot"></div></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <div class="tl-title">Software Engineer & Full Stack Intern</div>
+              <div class="tl-company">Centre for Development of Advanced Computing (C-DAC)</div>
+              <div class="tl-loc">📍 Pune, India</div>
+            </div>
+            <span class="tl-period">Aug 2020 – Apr 2021</span>
+          </div>
+          <div class="tl-bullets">
+            <div class="tl-b">Mesh Generation for Flood Simulation: Reduced mesh triangles by <strong>27%</strong> without sacrificing accuracy by replacing irregular triangular meshes with regular ones during simulation generation.</div>
+            <div class="tl-b">Optimized the software development process using <strong>Param Shakti Supercomputer</strong> by 40% through parallel computation.</div>
+            <div class="tl-b">Built a Flood Dissemination Web Portal that increased accessibility by <strong>~98%</strong> by depicting real-time flood simulations from triangle-predicted data.</div>
+            <div class="tl-b">Improved portal functionality by <strong>85%</strong> using React, MongoDB, Express, Node.js, and libraries including Leaflet.js, Geotiff.js, and Chart.js.</div>
+          </div>
+        </div>
+      </div>
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
+      <div class="tl-item reveal">
+        <div class="tl-dot"><div class="dot"></div></div>
+        <div class="tl-card">
+          <div class="tl-head">
+            <div>
+              <div class="tl-title">Machine Learning Engineer Intern</div>
+              <div class="tl-company">Securly</div>
+              <div class="tl-loc">📍 Pune, India</div>
+            </div>
+            <span class="tl-period">Aug 2020 – Dec 2020</span>
+          </div>
+          <div class="tl-bullets">
+            <div class="tl-b">Eliminated <strong>90% of redundant email content</strong> — signatures and disclaimers — using NLP and Regex data cleaning techniques.</div>
+            <div class="tl-b">Built a system to analyze student emails and detect early signs of mental health conditions related to self-harm and suicide risk.</div>
+            <div class="tl-b">Analyzed more than <strong>5 billion activities</strong> — the system has been credited with saving <strong>1,937 lives</strong>.</div>
+          </div>
+        </div>
+      </div>
 
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
+    </div>
+  </div>
+</section>
 
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
+<!-- PROJECTS -->
+<section id="projects" class="section" style="background:var(--surface);border-top:1px solid var(--border)">
+  <div class="container">
+    <div class="section-label reveal">Research & Projects</div>
+    <h2 class="section-title reveal d1">Built to Win</h2>
+    <p class="section-sub reveal d2">National hackathon recognition, Kaggle benchmark-beating results, and first-place competition finishes.</p>
+    <div class="proj-grid">
 
-							</article>
+      <div class="proj-card reveal">
+        <div class="proj-num">01 / SMART INDIA HACKATHON · BPRD</div>
+        <div class="proj-title">Deepfake Detection using Deep Learning</div>
+        <div class="proj-impact">🏆 Led team to nationals · 96% accuracy</div>
+        <p class="proj-desc">Classified deepfakes using <strong>EfficientNet B7</strong> for the Government of India's BPRD agency. Built a cross-platform Flutter mobile app and a full MERN web portal deployed on Microsoft Azure.</p>
+        <div class="tags">
+          <span class="tag">EfficientNet B7</span><span class="tag">Flutter</span><span class="tag">MERN</span><span class="tag">Azure</span><span class="tag">Deep Learning</span>
+        </div>
+      </div>
 
-					</div>
+      <div class="proj-card reveal d1">
+        <div class="proj-num">02 / MEDICAL AI · KAGGLE</div>
+        <div class="proj-title">Pulmonary Fibrosis Progression Prediction</div>
+        <div class="proj-impact">🥇 Beat Kaggle winner · LLL: −6.8303</div>
+        <p class="proj-desc">Outperformed the Kaggle competition winner predicting Forced Vital Capacity progression in pulmonary fibrosis patients using <strong>ResNet + Multiple Quantile Regression</strong>.</p>
+        <div class="tags">
+          <span class="tag">ResNet</span><span class="tag teal">Medical AI</span><span class="tag">Quantile Regression</span><span class="tag">Kaggle</span>
+        </div>
+      </div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">.</p>
-					</footer>
+      <div class="proj-card reveal d2">
+        <div class="proj-num">03 / COURSE COMPETITION</div>
+        <div class="proj-title">Pawpularity Contest — Pet Photo Popularity</div>
+        <div class="proj-impact">🥇 First rank in course · RMSE: 17.93</div>
+        <p class="proj-desc">Forecasted pet photo popularity by training <strong>56 models</strong> — SWIN Transformer, Transfer Learning, CNNs, and ensemble methods with extensive feature engineering.</p>
+        <div class="tags">
+          <span class="tag">SWIN Transformer</span><span class="tag">Transfer Learning</span><span class="tag">CNNs</span><span class="tag">Ensemble</span><span class="tag amber">56 Models</span>
+        </div>
+      </div>
 
-			</div>
+    </div>
+  </div>
+</section>
 
-		<!-- BG -->
-			<div id="bg">
-				<span class="imagemain"><img src="images/pexels-alex-andrews-1983032.jpg" alt="" /></span>
-			</div>
+<!-- VOLUNTEER -->
+<section id="volunteer" class="section">
+  <div class="container">
+    <div class="section-label reveal">Giving Back</div>
+    <h2 class="section-title reveal d1">AI for Good</h2>
+    <div class="vol-card reveal d2">
+      <div>
+        <div class="vol-eyebrow">Volunteer Project</div>
+        <div class="vol-title">Clinical Trials Finder</div>
+        <div class="vol-org">Cerebral Palsy Research Network</div>
+        <p class="vol-desc">Built an Agentic AI serverless application on Azure that translates ClinicalTrials.gov eligibility criteria into plain language — making clinical trials accessible to patients and caregivers who aren't medical professionals. Auto-deploys via GitHub Actions CI/CD with $0 idle cost.</p>
+        <div class="tags" style="margin-top:20px">
+          <span class="tag teal">Agentic AI</span>
+          <span class="tag teal">Azure Container Apps</span>
+          <span class="tag teal">GPT-4o</span>
+          <span class="tag teal">Microsoft Foundry</span>
+          <span class="tag teal">GitHub Actions</span>
+        </div>
+      </div>
+      <div class="vol-stats">
+        <div class="vol-stat">
+          <div class="vol-icon">🤖</div>
+          <div><div class="vol-stat-label">AI Engine</div><div class="vol-stat-val">Azure OpenAI via Microsoft Foundry + GPT-4o</div></div>
+        </div>
+        <div class="vol-stat">
+          <div class="vol-icon">☁️</div>
+          <div><div class="vol-stat-label">Infrastructure</div><div class="vol-stat-val">Azure Container Apps · Serverless · $0 idle</div></div>
+        </div>
+        <div class="vol-stat">
+          <div class="vol-icon">🚀</div>
+          <div><div class="vol-stat-label">Deployment</div><div class="vol-stat-val">Auto-deploys via GitHub Actions CI/CD</div></div>
+        </div>
+        <div class="vol-stat">
+          <div class="vol-icon">💙</div>
+          <div><div class="vol-stat-label">Impact</div><div class="vol-stat-val">Plain-language trial eligibility for CP patients</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<!-- SKILLS -->
+<section id="skills" class="section" style="background:var(--surface);border-top:1px solid var(--border)">
+  <div class="container">
+    <div class="section-label reveal">Technical Arsenal</div>
+    <h2 class="section-title reveal d1">Skills & Tools</h2>
+    <p class="section-sub reveal d2">Full-stack AI engineering — from raw data pipelines to production LLM deployments at enterprise scale.</p>
+    <div class="skills-grid">
+      <div class="skill-cat reveal">
+        <div class="skill-cat-title">Languages</div>
+        <div class="skill-pills">
+          <span class="pill">Python</span><span class="pill">R</span><span class="pill">C#</span><span class="pill">JavaScript</span><span class="pill">HTML</span><span class="pill">CSS</span>
+        </div>
+      </div>
+      <div class="skill-cat reveal d1">
+        <div class="skill-cat-title">Frameworks</div>
+        <div class="skill-pills">
+          <span class="pill">PyTorch</span><span class="pill">Flask</span><span class="pill">Kafka</span><span class="pill">Pandas</span><span class="pill">NumPy</span><span class="pill">Scikit-learn</span><span class="pill">LangChain</span><span class="pill">Streamlit</span><span class="pill">React</span><span class="pill">Node.js</span>
+        </div>
+      </div>
+      <div class="skill-cat reveal d2">
+        <div class="skill-cat-title">AI & LLMs</div>
+        <div class="skill-pills">
+          <span class="pill">Agentic AI</span><span class="pill">Multi-Agent</span><span class="pill">RAG</span><span class="pill">Rogo.ai</span><span class="pill">Llama2/3</span><span class="pill">BERT</span><span class="pill">GPT-4o</span><span class="pill">TF-IDF</span><span class="pill">KMeans</span>
+        </div>
+      </div>
+      <div class="skill-cat reveal d3">
+        <div class="skill-cat-title">Databases</div>
+        <div class="skill-pills">
+          <span class="pill">MongoDB</span><span class="pill">SQL</span><span class="pill">Redis</span><span class="pill">MySQL</span><span class="pill">Elastic</span>
+        </div>
+      </div>
+      <div class="skill-cat reveal d4">
+        <div class="skill-cat-title">Cloud & DevOps</div>
+        <div class="skill-pills">
+          <span class="pill">AWS</span><span class="pill">Microsoft Azure</span><span class="pill">Google Cloud</span><span class="pill">Container Apps</span><span class="pill">MS Foundry</span><span class="pill">GitHub Actions</span><span class="pill">GitLab Duo</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-	</body>
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container">
+    <div class="section-label reveal">Academic Foundation</div>
+    <h2 class="section-title reveal d1">Education</h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal d1">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-degree">Master of Science in Computer Science</div>
+        <div class="edu-spec">Specialization in Data Science</div>
+        <div class="edu-school">University of Massachusetts Amherst</div>
+        <div class="edu-meta"><span>📅 May 2023</span><span>📍 Amherst, MA</span></div>
+        <div class="edu-gpa">GPA: 3.86 / 4.0</div>
+      </div>
+      <div class="edu-card reveal d2">
+        <div class="edu-icon">🏛️</div>
+        <div class="edu-degree">Bachelor of Engineering in Computer Engineering</div>
+        <div class="edu-spec">&nbsp;</div>
+        <div class="edu-school">Savitribai Phule Pune University</div>
+        <div class="edu-meta"><span>📅 April 2021</span><span>📍 Pune, India</span></div>
+        <div class="edu-gpa">GPA: 8.6 / 10</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="section-label" style="display:inline-block;margin-bottom:12px">Get In Touch</div>
+      <h2 class="contact-title reveal">Let's Build Something Together</h2>
+      <p class="contact-sub reveal d1">Open to interesting problems in AI, risk intelligence, and data systems.</p>
+      <div class="contact-links reveal d2">
+        <a class="clink" href="mailto:sakshidoshi3@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          sakshidoshi3@gmail.com
+        </a>
+        <a class="clink" href="https://linkedin.com/in/sakshidoshi" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a class="clink" href="https://github.com/sakshidoshi13" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/></svg>
+          GitHub
+        </a>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Sakshi Doshi. Crafted with care.</span>
+        <span>Data Scientist · AI Engineer · Charlotte, NC</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+  // Theme
+  const html = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  let dark = true;
+  themeBtn.addEventListener('click', () => {
+    dark = !dark;
+    html.setAttribute('data-theme', dark ? 'dark' : 'light');
+    themeBtn.textContent = dark ? '☀️' : '🌙';
+  });
+
+  // Nav scroll
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', scrollY > 20);
+  });
+
+  // Hamburger
+  const ham = document.getElementById('hamburger');
+  const mob = document.getElementById('mobileMenu');
+  ham.addEventListener('click', () => mob.classList.toggle('open'));
+  document.querySelectorAll('.ml').forEach(l => l.addEventListener('click', () => mob.classList.remove('open')));
+
+  // Role cycle
+  const track = document.getElementById('roleTrack');
+  const items = track.querySelectorAll('.hero-role-item');
+  let cur = 0;
+  setInterval(() => {
+    cur = (cur + 1) % items.length;
+    track.style.transform = `translateY(${-cur * 2}em)`;
+  }, 2500);
+
+  // Reveal
+  const ro = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+  setTimeout(() => document.querySelectorAll('#hero .reveal').forEach(el => el.classList.add('visible')), 80);
+
+  // Count-up
+  function countUp(el) {
+    const target = +el.dataset.count;
+    const suffix = el.dataset.suffix || '';
+    const dur = 1600;
+    const t0 = performance.now();
+    const step = now => {
+      const p = Math.min((now - t0) / dur, 1);
+      const e = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.floor(e * target) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = target + suffix;
+    };
+    requestAnimationFrame(step);
+  }
+  const co = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { countUp(e.target); co.unobserve(e.target); } });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.impact-num[data-count]').forEach(el => co.observe(el));
+
+  // Particles
+  const canvas = document.getElementById('particles-canvas');
+  const ctx = canvas.getContext('2d');
+  let nodes = [];
+  const N = 55;
+
+  function resize() { canvas.width = canvas.offsetWidth; canvas.height = canvas.offsetHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+
+  for (let i = 0; i < N; i++) nodes.push({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    vx: (Math.random() - .5) * .4,
+    vy: (Math.random() - .5) * .4,
+    r: Math.random() * 1.5 + .8
+  });
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const isDark = html.getAttribute('data-theme') !== 'light';
+    const nc = isDark ? 'rgba(129,140,248,' : 'rgba(99,102,241,';
+    nodes.forEach(n => {
+      n.x += n.vx; n.y += n.vy;
+      if (n.x < 0 || n.x > canvas.width) n.vx *= -1;
+      if (n.y < 0 || n.y > canvas.height) n.vy *= -1;
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+      ctx.fillStyle = nc + '.7)';
+      ctx.fill();
+    });
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        const dx = nodes[i].x - nodes[j].x;
+        const dy = nodes[i].y - nodes[j].y;
+        const d = Math.sqrt(dx*dx + dy*dy);
+        if (d < 130) {
+          ctx.beginPath();
+          ctx.moveTo(nodes[i].x, nodes[i].y);
+          ctx.lineTo(nodes[j].x, nodes[j].y);
+          ctx.strokeStyle = nc + (.15 * (1 - d/130)) + ')';
+          ctx.lineWidth = .8;
+          ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+</script>
+</body>
 </html>
